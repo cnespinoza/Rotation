@@ -19,6 +19,9 @@
 		2CF07FD918988C040023550B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CF07FC118988C040023550B /* UIKit.framework */; };
 		2CF07FE118988C040023550B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2CF07FDF18988C040023550B /* InfoPlist.strings */; };
 		2CF07FE318988C040023550B /* HeavyRotationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CF07FE218988C040023550B /* HeavyRotationTests.m */; };
+		2CF07FEF18988D3C0023550B /* RotationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CF07FED18988D3C0023550B /* RotationViewController.m */; };
+		2CF07FF018988D3C0023550B /* RotationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CF07FEE18988D3C0023550B /* RotationViewController.xib */; };
+		2CF07FF218988ED60023550B /* photo (1).JPG in Resources */ = {isa = PBXBuildFile; fileRef = 2CF07FF118988ED60023550B /* photo (1).JPG */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +51,10 @@
 		2CF07FDE18988C040023550B /* HeavyRotationTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HeavyRotationTests-Info.plist"; sourceTree = "<group>"; };
 		2CF07FE018988C040023550B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		2CF07FE218988C040023550B /* HeavyRotationTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HeavyRotationTests.m; sourceTree = "<group>"; };
+		2CF07FEC18988D3C0023550B /* RotationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RotationViewController.h; sourceTree = "<group>"; };
+		2CF07FED18988D3C0023550B /* RotationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RotationViewController.m; sourceTree = "<group>"; };
+		2CF07FEE18988D3C0023550B /* RotationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RotationViewController.xib; sourceTree = "<group>"; };
+		2CF07FF118988ED60023550B /* photo (1).JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "photo (1).JPG"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +116,9 @@
 			children = (
 				2CF07FCC18988C040023550B /* RotationAppDelegate.h */,
 				2CF07FCD18988C040023550B /* RotationAppDelegate.m */,
+				2CF07FEC18988D3C0023550B /* RotationViewController.h */,
+				2CF07FED18988D3C0023550B /* RotationViewController.m */,
+				2CF07FEE18988D3C0023550B /* RotationViewController.xib */,
 				2CF07FCF18988C040023550B /* Images.xcassets */,
 				2CF07FC418988C040023550B /* Supporting Files */,
 			);
@@ -118,6 +128,7 @@
 		2CF07FC418988C040023550B /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				2CF07FF118988ED60023550B /* photo (1).JPG */,
 				2CF07FC518988C040023550B /* HeavyRotation-Info.plist */,
 				2CF07FC618988C040023550B /* InfoPlist.strings */,
 				2CF07FC918988C040023550B /* main.m */,
@@ -220,8 +231,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2CF07FF218988ED60023550B /* photo (1).JPG in Resources */,
 				2CF07FC818988C040023550B /* InfoPlist.strings in Resources */,
 				2CF07FD018988C040023550B /* Images.xcassets in Resources */,
+				2CF07FF018988D3C0023550B /* RotationViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -240,6 +253,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2CF07FEF18988D3C0023550B /* RotationViewController.m in Sources */,
 				2CF07FCE18988C040023550B /* RotationAppDelegate.m in Sources */,
 				2CF07FCA18988C040023550B /* main.m in Sources */,
 			);
