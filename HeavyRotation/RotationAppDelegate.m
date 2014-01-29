@@ -10,6 +10,7 @@
 #import "RotationViewController.h"
 
 @implementation RotationAppDelegate
+@synthesize rvc;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
@@ -41,7 +42,7 @@
              object:device];
     
     
-    RotationViewController *rvc = [[RotationViewController alloc] init];
+    rvc = [[RotationViewController alloc] init];
     [[self window] setRootViewController:rvc];
     
     self.window.backgroundColor = [UIColor whiteColor];
@@ -52,13 +53,17 @@
 -(void) orientationChanged:(NSNotification *)note
 {
     //Log the constant that represents the current orientation
-    NSLog(@"orientationchanged:%d", [[note object] orientation]);
+    NSLog(@"orientationchanged:%ld", [[note object] orientation]);
 }
 
 -(void) proximityState:(NSNotification*)note
 {
     //Log the proximity state
     NSLog(@"proximityStateChange:%d", [[note object] proximityState]);
+    
+    if ([[note object] proximityState]) {
+        [[rvc view] setBackgroundColor:[UIColor darkGrayColor]];
+    }
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application
