@@ -22,6 +22,10 @@
     //Tell it to start monitoring hte accelerometer for orientation
     [device beginGeneratingDeviceOrientationNotifications];
     
+    
+    //Tell it to start monitoring proximity
+    [device setProximityMonitoringEnabled:YES];
+    
     //Get the notification center for the app
     NSNotificationCenter *nc = [NSNotificationCenter defaultCenter];
     
@@ -30,6 +34,12 @@
            selector:@selector(orientationChanged:)
                name:UIDeviceOrientationDidChangeNotification
              object:device];
+    
+    [nc addObserver:self
+           selector:@selector(proximityState:)
+               name:UIDeviceOrientationDidChangeNotification
+             object:device];
+    
     
     RotationViewController *rvc = [[RotationViewController alloc] init];
     [[self window] setRootViewController:rvc];
@@ -43,6 +53,12 @@
 {
     //Log the constant that represents the current orientation
     NSLog(@"orientationchanged:%d", [[note object] orientation]);
+}
+
+-(void) proximityState:(NSNotification*)note
+{
+    //Log the proximity state
+    NSLog(@"proximityStateChange:%d", [[note object] proximityState]);
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application
