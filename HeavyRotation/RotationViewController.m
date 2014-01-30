@@ -22,8 +22,7 @@
      | UIViewAutoresizingFlexibleWidth];
     
     //Slider
-    [slider setAutoresizingMask:UIViewAutoresizingFlexibleTopMargin
-     | UIViewAutoresizingFlexibleBottomMargin
+    [slider setAutoresizingMask:UIViewAutoresizingFlexibleBottomMargin
      | UIViewAutoresizingFlexibleWidth];
     
     //Left Button
