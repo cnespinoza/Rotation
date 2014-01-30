@@ -53,7 +53,7 @@
 -(void) orientationChanged:(NSNotification *)note
 {
     //Log the constant that represents the current orientation
-    NSLog(@"orientationchanged:%ld", [[note object] orientation]);
+    NSLog(@"orientationchanged:%d", [[note object] orientation]);
 }
 
 -(void) proximityState:(NSNotification*)note

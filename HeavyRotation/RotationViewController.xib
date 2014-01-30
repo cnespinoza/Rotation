@@ -6,6 +6,11 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RotationViewController">
             <connections>
+                <outlet property="buttonLeft" destination="wRB-S7-jCn" id="hva-lj-net"/>
+                <outlet property="buttonRight" destination="dgq-F9-2EA" id="sUk-hY-yoy"/>
+                <outlet property="image" destination="SXO-5O-CvL" id="9eg-xj-onj"/>
+                <outlet property="mainWindow" destination="1" id="iP3-LK-o70"/>
+                <outlet property="slider" destination="hWQ-LC-Uf2" id="voi-rU-kgR"/>
                 <outlet property="view" destination="1" id="3"/>
             </connections>
         </placeholder>
@@ -14,47 +19,31 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wRB-S7-jCn">
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wRB-S7-jCn">
                     <rect key="frame" x="20" y="518" width="46" height="30"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <state key="normal" title="Button">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dgq-F9-2EA">
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dgq-F9-2EA">
                     <rect key="frame" x="254" y="518" width="46" height="30"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <state key="normal" title="Button">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                 </button>
-                <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="hWQ-LC-Uf2">
+                <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="hWQ-LC-Uf2">
                     <rect key="frame" x="18" y="61" width="284" height="34"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 </slider>
-                <imageView multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="photo (1).JPG" translatesAutoresizingMaskIntoConstraints="NO" id="SXO-5O-CvL">
+                <imageView multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="photo (1).JPG" translatesAutoresizingMaskIntoConstraints="NO" id="SXO-5O-CvL">
                     <rect key="frame" x="40" y="157" width="240" height="253"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="253" id="RTp-Ot-Ulu"/>
-                    </constraints>
                 </imageView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-            <constraints>
-                <constraint firstItem="wRB-S7-jCn" firstAttribute="leading" secondItem="1" secondAttribute="leading" constant="20" id="1FB-EK-qSh"/>
-                <constraint firstAttribute="bottom" secondItem="wRB-S7-jCn" secondAttribute="bottom" constant="20" id="6Fl-w3-Q1m"/>
-                <constraint firstItem="SXO-5O-CvL" firstAttribute="leading" secondItem="1" secondAttribute="leading" constant="40" id="9zu-0S-LcI"/>
-                <constraint firstItem="SXO-5O-CvL" firstAttribute="top" secondItem="hWQ-LC-Uf2" secondAttribute="bottom" constant="63" id="C5T-gF-uff"/>
-                <constraint firstAttribute="trailing" secondItem="hWQ-LC-Uf2" secondAttribute="trailing" constant="20" id="KXc-Dp-tGh"/>
-                <constraint firstAttribute="trailing" secondItem="dgq-F9-2EA" secondAttribute="trailing" constant="20" id="QKL-lj-Uyp"/>
-                <constraint firstItem="hWQ-LC-Uf2" firstAttribute="top" secondItem="1" secondAttribute="top" constant="61" id="S0U-fi-41f"/>
-                <constraint firstAttribute="centerY" secondItem="SXO-5O-CvL" secondAttribute="centerY" id="mA1-2m-DU0"/>
-                <constraint firstItem="SXO-5O-CvL" firstAttribute="centerX" secondItem="hWQ-LC-Uf2" secondAttribute="centerX" id="oJ9-53-ndL"/>
-                <constraint firstItem="hWQ-LC-Uf2" firstAttribute="leading" secondItem="1" secondAttribute="leading" constant="20" id="qQG-Vi-gaq"/>
-                <constraint firstAttribute="bottom" secondItem="dgq-F9-2EA" secondAttribute="bottom" constant="20" id="v8Q-Tp-Uoe"/>
-            </constraints>
             <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
         </view>

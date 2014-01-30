@@ -14,11 +14,33 @@
 
 @implementation RotationViewController
 
+//Set the autoresizing mask programmatically
+- (void)viewDidLoad
+{
+    //Image view
+    [image setAutoresizingMask:UIViewAutoresizingFlexibleHeight
+     | UIViewAutoresizingFlexibleWidth];
+    
+    //Slider
+    [slider setAutoresizingMask:UIViewAutoresizingFlexibleTopMargin
+     | UIViewAutoresizingFlexibleBottomMargin
+     | UIViewAutoresizingFlexibleWidth];
+    
+    //Left Button
+    [buttonLeft setAutoresizingMask:UIViewAutoresizingFlexibleRightMargin
+     | UIViewAutoresizingFlexibleTopMargin];
+    
+    //Right Button
+    [buttonRight setAutoresizingMask:UIViewAutoresizingFlexibleLeftMargin
+     | UIViewAutoresizingFlexibleTopMargin];
+}
+
 -(BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)x
 {
     return (x==UIInterfaceOrientationPortrait)
     | UIInterfaceOrientationLandscapeLeft
     | UIInterfaceOrientationLandscapeRight;
 }
+
 
 @end

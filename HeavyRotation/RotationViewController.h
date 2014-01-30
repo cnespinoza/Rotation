@@ -9,5 +9,14 @@
 #import <UIKit/UIKit.h>
 
 @interface RotationViewController : UIViewController
+{
+    
+    IBOutlet UIView *mainWindow;
+    __weak IBOutlet UISlider *slider;
+    __weak IBOutlet UIImageView *image;
+    __weak IBOutlet UIButton *buttonLeft;
+    __weak IBOutlet UIButton *buttonRight;
+
+}
 
 @end
