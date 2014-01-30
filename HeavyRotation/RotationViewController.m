@@ -35,12 +35,20 @@
      | UIViewAutoresizingFlexibleTopMargin];
 }
 
+/* Depreciated method
 -(BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)x
 {
     return (x==UIInterfaceOrientationPortrait)
     | UIInterfaceOrientationLandscapeLeft
     | UIInterfaceOrientationLandscapeRight;
-}
+}*/
 
+- (BOOL)shouldAutorotate:(UIInterfaceOrientation)x
+{
+    x = [self interfaceOrientation];
+    
+    return (x == UIInterfaceOrientationPortrait)
+    || UIInterfaceOrientationIsLandscape(x);
+}
 
 @end
