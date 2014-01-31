@@ -16,6 +16,7 @@
     __weak IBOutlet UIImageView *image;
     __weak IBOutlet UIButton *buttonLeft;
     __weak IBOutlet UIButton *buttonRight;
+    __weak IBOutlet UIButton *newButton;
 
 }
 

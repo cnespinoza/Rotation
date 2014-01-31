@@ -52,4 +52,15 @@
     || UIInterfaceOrientationIsLandscape(x);
 }
 
+-(void)willAnimateRotationToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation duration:(NSTimeInterval)duration
+{
+    CGRect bounds = [[self view] bounds];
+    
+    if (UIInterfaceOrientationPortrait(x)){
+        //Put the button in the top right corner
+        [new button ]
+    }
+    
+}
+
 @end
