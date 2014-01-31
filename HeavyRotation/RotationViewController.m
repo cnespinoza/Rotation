@@ -17,10 +17,12 @@
 //Set the autoresizing mask programmatically
 - (void)viewDidLoad
 {
+    [super viewDidLoad];
+    
     //Image view
     [image setAutoresizingMask:UIViewAutoresizingFlexibleHeight
      | UIViewAutoresizingFlexibleWidth];
-    
+
     //Slider
     [slider setAutoresizingMask:UIViewAutoresizingFlexibleBottomMargin
      | UIViewAutoresizingFlexibleWidth];
